@@ -1,0 +1,356 @@
+@font-face {
+  font-family: "gilroy";
+  src: url(fonts/gilroy/Gilroy-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+  /* font-weight: 600;
+font-size: 100px; */
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#nav h5 {
+  font-size: 14px;
+  font-weight: 500px;
+  margin: 0 20px;
+  text-transform: capitalize;
+}
+
+#nav i {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 20px;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  /* position: relative; */
+  /* background-color: red; */
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: absolute;
+  /* padding-left: 20px; */
+  top: 0;
+  z-index: 999;
+  position: fixed;
+}
+
+#navleft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0 40px; */
+}
+#logo {
+  width: 60px;
+  /* background-color: red */
+}
+
+#navleft ul {
+  display: flex;
+  margin-left: 30px;
+  font-weight: 300;
+  align-items: center;
+  justify-content: center;
+}
+#navleft ul li {
+  color: rgb(113, 113, 113);
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 15px;
+  list-style-type: none;
+  cursor: pointer;
+  /* gap: 20px; */
+}
+#navleft ul li:hover {
+  color: rgb(28, 27, 27);
+  font-size: 15px;
+  margin-left: 15px;
+  font-weight: 700;
+  list-style-type: none;
+}
+
+#navright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navright button {
+  border: none;
+  background-color: white;
+  /* background-color: pink; */
+  margin-right: 5px;
+  padding: 6px 18px;
+  color: rgb(113, 113, 113);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#navright button:hover {
+  color: rgb(28, 27, 27);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#navright #main {
+  background-color: rgb(254, 90, 118);
+  border-radius: 8px;
+  color: white;
+}
+#navright #main:hover {
+  background-color: rgb(255, 141, 160);
+  border-radius: 8px;
+  color: rgb(28, 27, 27);
+}
+/* ---------nav area------------------------------ */
+
+#head {
+  height: 50vh;
+  width: 100%;
+  background-color: red;
+  position: relative;
+  margin-top: 200px;
+  /* padding: 10px ; */
+}
+#head video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+#head_hover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(29, 29, 29, 0.615);
+  z-index: 9;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#contents {
+  margin: 15px 10px;
+  /* padding: 10px 5px; */
+  /* height: 100px; */
+  /* width: 90%; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  /* padding: 0 50px; */
+  gap: 10px;
+  row-gap: 8px;
+  /* background: red */
+  /* z-index: 8; */
+}
+
+#contents h5 {
+  /* width: 100%; */
+  /* margin-left: 13px; */
+  background-color: rgba(44, 4, 4, 0.695);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  /* overflow: hidden; */
+}
+#contents h5:hover {
+  /* margin-left: 13px; */
+  background-color: rgba(224, 224, 224, 0.902);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  color: rgb(37, 37, 37);
+}
+#head_hover h1 {
+  width: 50%;
+  /* margin-top: 30px; */
+  font-size: 32px;
+  text-align: center;
+  /* padding: 0 100px; */
+  /* background-color: red; */
+}
+#head_hover h3 {
+  width: 60%;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  /* padding: 0 100px; */
+  /* background-color: red; */
+}
+
+#search {
+  width: 50%;
+  margin-top: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  padding: 8px 0 8px 15px;
+}
+
+#trending {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  /* padding: 0 50px; */
+  margin-top: 25px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#trending h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 15px;
+}
+#trending h5 {
+  /* width: 100%; */
+  /* margin-left: 15px; */
+  background-color: rgba(44, 4, 4, 0.695);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  align-self: center;
+}
+
+#portfolio_section {
+  width: 90%;
+  height: 900px;
+
+}
+#filters {
+  width: 100%;
+  padding: 20px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* top: 40px; */
+}
+
+#LeftS {
+  width: 120px;
+  /* height: 100px; */
+  /* line-height: 100px; */
+  border: 1px solid rgb(195, 193, 193);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+#RightS {
+  width: 70px;
+  /* height: 100px; */
+  /* line-height: 100px; */
+  border: 1px solid rgb(195, 193, 193);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: right;
+}
+
+/* #LeftS option, #LeftS hr
+{
+  background-color: red;
+
+}
+
+hr#solid {
+  border-top: 3px solid #383737;
+} */
+#portfolio {
+  width: 100%;
+  padding: 0 20px;
+  /* display: inline-block; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+#portfolio #images img {
+  /* height: 300px; */
+  width: 250px;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  border-radius: 10px;
+}
+#portfolio #images {
+  width: 250px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 10px;
+}
+#desc_box {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  font-size: 14px;
+  bottom: 0;
+  /* top: 0; */
+  background: linear-gradient(rgba(255, 255, 255, 0.309), black);
+  color: wheat;
+  border-radius: 10px;
+  z-index: 9;
+  /* display: none; */
+  opacity: 0;
+}
+#portfolio #images:hover #desc_box {
+  opacity: 1;
+  /* display: none; */
+}
